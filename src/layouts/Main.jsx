@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
 
-// import required modules
-import { Keyboard, Pagination, Navigation } from "swiper";
+// // import required modules
+// import { Keyboard, Pagination, Navigation } from "swiper";
 import sliderImg1 from '../images/slider-img1.png'
 import settingsIcon from '../images/settings-icon.svg'
 import searchIcon from '../images/search-icon.svg'
@@ -37,7 +37,7 @@ function Main() {
 						<p className="title-paragrph">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu sapien sodales vulputate ac in purus.</p>
 
 						<div className='main-slider'>
-							<Swiper
+							{/* <Swiper
 								slidesPerView={1}
 								spaceBetween={30}
 								keyboard={{
@@ -62,7 +62,7 @@ function Main() {
 								<SwiperSlide>
 									<img src={sliderImg1} alt="" />
 								</SwiperSlide>
-							</Swiper>
+							</Swiper> */}
 						</div>
 					</div>
 					<div className="main-tab">
