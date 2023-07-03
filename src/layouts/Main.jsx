@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 // Import Swiper React components
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-
-// // import required modules
-// import { Keyboard, Pagination, Navigation } from "swiper";
-import sliderImg1 from '../images/slider-img1.png'
+// import required modules
+import { Keyboard, Pagination, Navigation  } from "swiper/modules";
+import sliderImg1 from '../images/main-slider-img.png'
 import settingsIcon from '../images/settings-icon.svg'
 import searchIcon from '../images/search-icon.svg'
 import usersImg from '../images/users.png';
@@ -16,6 +15,11 @@ import logitechImg from '../images/logitech-icon.svg';
 import sporifyImg from '../images/spotify-icon.svg';
 import samsungImg from '../images/samsung-icon.svg';
 import netflixImg from '../images/netflix-icon.svg';
+
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 
 function Main() {
 	const [ToggleState, setToggleState] = useState(1);
@@ -37,7 +41,7 @@ function Main() {
 						<p className="title-paragrph">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu sapien sodales vulputate ac in purus.</p>
 
 						<div className='main-slider'>
-							{/* <Swiper
+							<Swiper
 								slidesPerView={1}
 								spaceBetween={30}
 								keyboard={{
@@ -62,7 +66,7 @@ function Main() {
 								<SwiperSlide>
 									<img src={sliderImg1} alt="" />
 								</SwiperSlide>
-							</Swiper> */}
+							</Swiper>
 						</div>
 					</div>
 					<div className="main-tab">
