@@ -5,6 +5,7 @@ import Main from "./layouts/Main"
 import News from "./layouts/News"
 import Services from "./layouts/Services"
 import Team from "./layouts/Team"
+import Trending from "./layouts/Trending"
 import WhoAreWe from "./layouts/WhoAreWe"
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 			<Services />
 			<Areas />
 			<Team />
+			<Trending />
 			<Footer />
     </div>
   )

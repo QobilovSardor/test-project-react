@@ -664,14 +664,24 @@
 	font-weight: 600;
 	margin-top: 30px;
 }
-.news-sec .title-paragrph{
+
+.news-sec .title-paragrph {
 	margin-bottom: 50px;
 }
+
 .news-sec .slider-box .info h6 {
 	color: #2B2B2B;
 	font-size: 19.4px;
 	font-weight: 500;
 	margin-top: 10px;
+}
+
+.news-sec .tab-content.content {
+	display: none;
+}
+
+.news-sec .tab-content.active-content {
+	display: block;
 }
 
 .news-sec .slider-box .info p {
@@ -875,6 +885,7 @@
 	color: #0B090A;
 	font-size: 27.6px;
 	font-weight: 600;
+	margin: 30px 0 20px 0;
 }
 
 .our-team .team-card p {
@@ -884,6 +895,101 @@
 	font-weight: 500;
 }
 
+/* trending start */
+.trending {
+	background: #3A0CA3;
+	padding: 110px 0 100px 0;
+}
+
+.trending .next-icon {
+	margin-top: 30px;
+	text-align: right;
+	display: block;
+}
+
+.trending .title {
+	text-align: center;
+}
+
+.trending .trending-slider {
+	margin-top: 80px;
+}
+.trending .img-box img {
+	width: 340px;
+	height: 240px;
+}
+.trending .swiper-pagination-bullet {
+	width: 100px;
+	height: 4px;
+	background: #9c85d1;
+	border-radius: 10px;
+}
+.trending .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background: #fff;
+}
+.trending .swiper{
+	padding-bottom: 70px;
+}
+.trending .calendar p {
+	color: #2B2B2B;
+	text-align: center;
+	font-size: 19.4px;
+	font-weight: 500;
+	line-height: 16px;
+}
+
+.trending .img-box {
+	position: relative;
+}
+
+.trending .calendar {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	background: #FFF;
+	box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.trending .calendar span {
+	color: #808080;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.trending .title h4 {
+	color: #FFF;
+	text-align: center;
+	font-size: 19.4px;
+	font-weight: 500;
+	letter-spacing: 2.91px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.trending .title h2 {
+	color: #FFF;
+	text-align: center;
+	font-size: 39.8px;
+	font-weight: 600;
+	line-height: 47px;
+}
+
+.trending .slider-info h3 {
+	color: #FFF;
+	font-size: 27.6px;
+	font-weight: 500;
+}
+
+.trending .slider-info p {
+	color: #D4D4D4;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+}
 
 /* footer start */
 .footer {
