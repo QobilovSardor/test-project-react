@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -41,401 +41,106 @@ function News() {
 
 
 			</div>
-			<div className={`slider-box tab-content active-content ${getActiveClass(1, "active-content")}`}>
-				<Swiper
-					slidesPerView={3.5}
-					spaceBetween={50}
-					slidesPerGroupSkip={1}
-					pagination={{
-						clickable: true,
-					}}
-					className="mySwiper"
-				>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg1} alt="" />
-							<div className="img-info img-info__one">
-								<img src={fireIcon} alt="" />
-								<p>Popular</p>
+			<div className={`slider-box-big tab-content active-content ${getActiveClass(1, "active-content")}`}>
+				<div className="slider-box">
+					<div className="img-box">
+						<img src={newImg1} alt="" />
+						<div className="img-info img-info__one">
+							<img src={fireIcon} alt="" />
+							<p>Popular</p>
+						</div>
+					</div>
+					<div className="info">
+						<h4>$ 5,970</h4>
+						<h6>Tranquil Haven in the Woods</h6>
+						<p>103 Wright CourtBurien, WA 98168</p>
+						<div className='icons'>
+							<div className="icon-box">
+								<img src={bedIcon2} alt="" />
+								<p>4 Beds</p>
+							</div>
+							<div className="icon-box">
+								<img src={bathroomIcon} alt="" />
+								<p>3 Bath</p>
 							</div>
 						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
+					</div>
+				</div>
+				<div className="slider-box">
+					<div className="img-box">
+						<img src={newImg2} alt="" />
+						<div className="img-info img-info__two">
+							<img src={homeIcon2} alt="" />
+							<p>Popular</p>
+						</div>
+					</div>
+					<div className="info">
+						<h4>$ 5,970</h4>
+						<h6>Tranquil Haven in the Woods</h6>
+						<p>103 Wright CourtBurien, WA 98168</p>
+						<div className='icons'>
+							<div className="icon-box">
+								<img src={bedIcon2} alt="" />
+								<p>4 Beds</p>
+							</div>
+							<div className="icon-box">
+								<img src={bathroomIcon} alt="" />
+								<p>3 Bath</p>
 							</div>
 						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg2} alt="" />
-							<div className="img-info img-info__two">
-								<img src={homeIcon2} alt="" />
-								<p>Popular</p>
+					</div>
+				</div>
+				<div className="slider-box">
+					<div className="img-box">
+						<img src={newImg3} alt="" />
+						<div className="img-info img-info__three">
+							<img src={moneyIcon} alt="" />
+							<p>Popular</p>
+						</div>
+					</div>
+					<div className="info">
+						<h4>$ 5,970</h4>
+						<h6>Tranquil Haven in the Woods</h6>
+						<p>103 Wright CourtBurien, WA 98168</p>
+						<div className='icons'>
+							<div className="icon-box">
+								<img src={bedIcon2} alt="" />
+								<p>4 Beds</p>
+							</div>
+							<div className="icon-box">
+								<img src={bathroomIcon} alt="" />
+								<p>3 Bath</p>
 							</div>
 						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
+					</div>
+				</div>
+				<div className="slider-box">
+					<div className="img-box">
+						<img src={newImg1} alt="" />
+						<div className="img-info img-info__one">
+							<img src={fireIcon} alt="" />
+							<p>Popular</p>
+						</div>
+					</div>
+					<div className="info">
+						<h4>$ 5,970</h4>
+						<h6>Tranquil Haven in the Woods</h6>
+						<p>103 Wright CourtBurien, WA 98168</p>
+						<div className='icons'>
+							<div className="icon-box">
+								<img src={bedIcon2} alt="" />
+								<p>4 Beds</p>
+							</div>
+							<div className="icon-box">
+								<img src={bathroomIcon} alt="" />
+								<p>3 Bath</p>
 							</div>
 						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg3} alt="" />
-							<div className="img-info img-info__three">
-								<img src={moneyIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg1} alt="" />
-							<div className="img-info img-info__one">
-								<img src={fireIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg1} alt="" />
-							<div className="img-info img-info__one">
-								<img src={fireIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-				</Swiper>
-			</div>
-			<div className={`slider-box tab-content content ${getActiveClass(2, "content")}`}>
-				<Swiper
-					slidesPerView={3.5}
-					spaceBetween={50}
-					slidesPerGroupSkip={1}
-					pagination={{
-						clickable: true,
-					}}
-					className="mySwiper"
-				>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg1} alt="" />
-							<div className="img-info img-info__one">
-								<img src={fireIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg2} alt="" />
-							<div className="img-info img-info__two">
-								<img src={homeIcon2} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg3} alt="" />
-							<div className="img-info img-info__three">
-								<img src={moneyIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg1} alt="" />
-							<div className="img-info img-info__one">
-								<img src={fireIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg1} alt="" />
-							<div className="img-info img-info__one">
-								<img src={fireIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-				</Swiper>
-			</div>
-			<div className={`slider-box tab-content content ${getActiveClass(3, "content")}`}>
-				<Swiper
-					slidesPerView={3.5}
-					spaceBetween={50}
-					slidesPerGroupSkip={1}
-					pagination={{
-						clickable: true,
-					}}
-					className="mySwiper"
-				>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg1} alt="" />
-							<div className="img-info img-info__one">
-								<img src={fireIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg2} alt="" />
-							<div className="img-info img-info__two">
-								<img src={homeIcon2} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg3} alt="" />
-							<div className="img-info img-info__three">
-								<img src={moneyIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg1} alt="" />
-							<div className="img-info img-info__one">
-								<img src={fireIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div className="img-box">
-							<img src={newImg1} alt="" />
-							<div className="img-info img-info__one">
-								<img src={fireIcon} alt="" />
-								<p>Popular</p>
-							</div>
-						</div>
-						<div className="info">
-							<h4>$ 5,970</h4>
-							<h6>Tranquil Haven in the Woods</h6>
-							<p>103 Wright CourtBurien, WA 98168</p>
-							<div className='icons'>
-								<div className="icon-box">
-									<img src={bedIcon2} alt="" />
-									<p>4 Beds</p>
-								</div>
-								<div className="icon-box">
-									<img src={bathroomIcon} alt="" />
-									<p>3 Bath</p>
-								</div>
-							</div>
-						</div>
-					</SwiperSlide>
-				</Swiper>
+					</div>
+				</div>
+				<div className='media-btn__box'>
+					<a href="#!" className='media-btn'>View more properties</a>
+				</div>
 			</div>
 		</div>
 	)
