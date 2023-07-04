@@ -759,6 +759,7 @@
 .services-sec .cards {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .services-sec .services-card {
@@ -891,6 +892,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 .our-team .our-team__cards .team-card {
@@ -1656,6 +1659,7 @@
 
 	.title-text {
 		font-size: 27px !important;
+		line-height: normal !important;
 	}
 
 	.news-sec .title-text {
@@ -1697,7 +1701,121 @@
 	.who-are-we .info-box p {
 		font-size: 13.3px;
 	}
-		.who-are-we .info-box{
-			gap: 25px;
+
+	.who-are-we .info-box {
+		gap: 25px;
+	}
+
+	.services-sec {
+		margin-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.services-sec .title-text-xl {
+		font-size: 27px !important;
+	}
+
+	.services-sec .title h4 {
+		font-size: 16px;
+	}
+
+	.services-sec .services-card {
+		max-width: 100%;
+	}
+
+	.services-sec .services-card .services-icon {
+		width: 60px;
+		height: 60px;
+		padding: 17px;
+	}
+
+	.services-sec .services-card .services-icon img {
+		width: 24px;
+	}
+
+	.area-sec::before {
+		top: -21px;
+		left: auto;
+		right: 104px;
+	}
+
+	.area-sec {
+		padding: 100px 0;
+	}
+
+	.area-sec .title {
+		margin-bottom: 40px;
+	}
+
+	.area-sec .area-box {
+		width: 155px;
+		height: 155px;
+	}
+
+	.area-sec .area-box img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.area-sec .area-cards {
+		gap: 23px;
+	}
+
+	.area-sec .area-box__info h4 {
+		font-size: 27.6px;
+		line-height: normal;
+	}
+
+	.area-sec::after {
+		bottom: 158px;
+		right: 175px;
+		width: 60px;
+		height: 60px;
+		z-index: -1;
+		transform: rotate(-30deg);
+	}
+
+	.area-sec .area-box__info p {
+		font-size: 13.3px;
+		line-height: normal;
+	}
+
+	.area-sec .area-box__info {
+		bottom: 20px;
+		left: 20px;
+	}
+
+	.our-team .our-team__cards .team-card {
+		width: 120px;
+	}
+
+	.our-team .our-team__cards .team-card img {
+		width: 100%;
+	}
+
+	.our-team .team-card h5 {
+		font-size: 16px;
+		line-height: normal;
+		margin: 15px 0;
+		white-space: nowrap;
+	}
+
+	.our-team .team-card p {
+		font-size: 13px;
+		white-space: nowrap;
+	}
+
+	.our-team {
+		padding-bottom: 100px;
+	}
+
+	.trending .title h2 {
+		font-size: 27.6px;
+		line-height: normal;
+	}
+		.trending .title h4{
+			font-size: 16px;
+			margin-bottom: 20px;
+			line-height: normal;
 		}
 }
