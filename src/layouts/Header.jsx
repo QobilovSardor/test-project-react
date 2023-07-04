@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './layouts.css';
 import gmail from '../images/gmail-icon.svg'
 import phone from '../images/phone-icon.svg'
@@ -7,6 +7,12 @@ import houseIcon from '../images/house-icon.svg'
 import userIcon from '../images/user-icon.svg'
 
 function Header() {
+	const [click, setClick] = useState(false);
+
+	const henadlerClick = () => {
+		setClick(!click)
+	}
+
 	return (
 		<div className='header'>
 			<div className="header-inner">
@@ -29,8 +35,8 @@ function Header() {
 			</div>
 			<div className="navbar">
 				<div className="container">
-					<div className="menu">
-						<div className="close">
+					<div className={`menu ${click ? 'active' : ''}`}>
+						<div className="close" onClick={henadlerClick}>
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
 								<path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
 							</svg>
@@ -79,7 +85,7 @@ function Header() {
 								<p>Rezilla</p>
 							</div>
 						</div>
-						<div className="bars">
+						<div className='bars' onClick={henadlerClick}>
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
 								<path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 							</svg>

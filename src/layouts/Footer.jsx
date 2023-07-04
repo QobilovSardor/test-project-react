@@ -27,7 +27,7 @@ function Footer() {
 							<p>support@rezilla.com</p>
 						</a>
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 media-hide">
 						<h4>Quick Links</h4>
 						<ul>
 							<li>Home</li>
@@ -38,7 +38,7 @@ function Footer() {
 							<li>Become a Agent</li>
 						</ul>
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 media-hide">
 						<h4>Discovery</h4>
 						<ul>
 							<li>Canada</li>
