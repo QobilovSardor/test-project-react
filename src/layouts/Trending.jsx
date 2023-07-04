@@ -26,6 +26,18 @@ function Trending() {
 							clickable: true,
 						}}
 						modules={[Keyboard, Pagination, Navigation]}
+						breakpoints={{
+							// when window width is >= 640px
+							640: {
+								width: 640,
+								slidesPerView: 1,
+							},
+							// when window width is >= 768px
+							768: {
+								width: 768,
+								slidesPerView: 2,
+							},
+						}}
 						className="mySwiper"
 					>
 						<SwiperSlide>
@@ -110,6 +122,53 @@ function Trending() {
 						</SwiperSlide>
 					</Swiper>
 				</div>
+
+				<div className="media-tending">
+					<div className="flex-box">
+						<div className="wrapper-box">
+							<div className="img-box">
+								<img src={houseImg} alt="" />
+								<div className="calendar">
+									<p>28</p>
+									<span>Tue</span>
+								</div>
+							</div>
+							<div className="slider-info">
+								<h3>Top 10 Home Buying Mistakes to Avoid</h3>
+								<p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+							</div>
+						</div>
+						<div className="wrapper-box">
+							<div className="img-box">
+								<img src={houseImg} alt="" />
+								<div className="calendar">
+									<p>28</p>
+									<span>Tue</span>
+								</div>
+							</div>
+							<div className="slider-info">
+								<h3>Top 10 Home Buying Mistakes to Avoid</h3>
+								<p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+							</div>
+						</div>
+						<div className="wrapper-box">
+							<div className="img-box">
+								<img src={houseImg} alt="" />
+								<div className="calendar">
+									<p>28</p>
+									<span>Tue</span>
+								</div>
+							</div>
+							<div className="slider-info">
+								<h3>Top 10 Home Buying Mistakes to Avoid</h3>
+								<p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className='media-btn'>
+				<a href="#!">View more blogs</a>
 			</div>
 		</div>
 	)
